@@ -12,3 +12,10 @@ main {
         margin: $y-spacing;
     }
 }
+
+footer {
+    @include centered-flex-component();
+    .footer-content {
+
+    }
+}

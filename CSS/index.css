@@ -24,4 +24,9 @@ main .main-content {
   margin: 1rem;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=index.css.map */
