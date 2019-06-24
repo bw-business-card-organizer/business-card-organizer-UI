@@ -7,6 +7,8 @@
 html,
 body {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=global.css.map */
