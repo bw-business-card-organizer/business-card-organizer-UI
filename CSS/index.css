@@ -1,25 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Asap&display=swap");
-
 html,
 body {
   height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: "Nunito", sans-serif;
-  background: #e5e5e5;
-  overflow-x: hidden;
+}
+
+.nav-item a {
+  font-size: 1.25rem;
 }
 
 nav {
   background: #2477B3;
   box-shadow: 1px 6px 22px -2px rgba(0, 0, 0, 0.4);
   color: #FFF;
-  a {
-    color: #FFF;
-    font-size: 1.25rem;
-  }
+}
+nav a {
+  color: #FFF;
 }
 
+body {
+  background: #e5e5e5;
+  overflow-x: hidden;
+}
 
 main .main-content {
   display: flex;
@@ -27,51 +32,65 @@ main .main-content {
   align-items: center;
   justify-content: space-evenly;
   color: #3C5D74;
-  font-family: "Nunito", sans-serif; }
-  main .main-content .topic {
-    margin: 50px 0;
-    transform-origin: left center;
-    padding: 50px;
-    height: 900px;
-    width: 100%;
-    display: flex;
-    justify-content: center; }
-    main .main-content .topic:first-child {
-      margin: 0 0 50px 0; }
-    main .main-content .topic:last-child {
-      margin: 0; }
-    main .main-content .topic:nth-child(odd) {
-      background: #FFF; }
-    main .main-content .topic:nth-child(even) {
-      background: #e5e5e5; }
-    main .main-content .topic .topic-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      main .main-content .topic .topic-content img {
-        max-width: 80%;
-        max-height: 60%; }
-        main .main-content .topic .topic-content img:first-child {
-          border-radius: 5px;
-          margin-bottom: 10px; }
-      main .main-content .topic .topic-content h1 {
-        width: 100%;
-        padding: 10px;
-        border-radius: 10px 10px 0 0;
-        font-weight: bold;
-        font-size: 18px; }
-      main .main-content .topic .topic-content p {
-        width: 100%;
-        padding: 10px; }
+  font-family: "Nunito", sans-serif;
+}
+main .main-content .topic {
+  margin: 50px 0;
+  transform-origin: left center;
+  padding: 50px;
+  height: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .main-content .topic:first-child {
+  margin: 0 0 50px 0;
+}
+main .main-content .topic:last-child {
+  margin: 0;
+}
+main .main-content .topic:nth-child(odd) {
+  background: #FFF;
+}
+main .main-content .topic:nth-child(even) {
+  background: #e5e5e5;
+}
+main .main-content .topic .topic-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .main-content .topic .topic-content img {
+  max-width: 80%;
+  max-height: 60%;
+}
+main .main-content .topic .topic-content img:first-child {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+main .main-content .topic .topic-content h1 {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+main .main-content .topic .topic-content p {
+  width: 100%;
+  padding: 10px;
+}
 
 footer {
   background: #2477B3;
-  margin: 0; }
-  footer .footer-content {
-    color: #FFF;
-    padding: 10px 0; }
-    footer .footer-content li {
-      color: #FFF;
-      font-family: "Asap", serif; }
+  margin: 0;
+}
+footer .footer-content {
+  color: #FFF;
+  padding: 10px 0;
+}
+footer .footer-content li {
+  color: #FFF;
+  font-family: "Asap", serif;
+}
 
 /*# sourceMappingURL=index.css.map */
