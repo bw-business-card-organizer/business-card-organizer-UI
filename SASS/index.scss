@@ -10,6 +10,11 @@ $header-spacing: 3rem;
     100% { transform: rotate(0deg); }
 }
 
+@keyframes collapse {
+    0% { transform: none; }
+    100% { transform: scale(0.1); }
+}
+
 // page styles
 body {
     overflow-x: hidden;
@@ -56,25 +61,28 @@ main {
             }
 
             .landing {
+                transition: all 0.5s ease-in;
+
                 h1 {
                     font-size: 6rem;
-                    //animation: button-jiggle 1s linear 2s infinite forwards;
                     animation-name: jiggle;
                     animation-duration: 3s;
                     animation-timing-function: ease;
-                    //animation-delay: 2s;
                     animation-iteration-count: infinite;
                     animation-direction: normal;
                 }
 
                 .btn {
                     transition: all 0.3s ease-in;
-                    //animation: button-jiggle 1s linear 2s infinite forwards;
 
                     &:hover {
                         transform: scale(1.2, 1.2);
                     }
                 }
+            }
+
+            .landing-collapsed {
+                transform: scale(0.1);
             }
         }
     }

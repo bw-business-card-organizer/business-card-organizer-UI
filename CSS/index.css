@@ -50,6 +50,11 @@ footer {
     transform: rotate(0deg); }
   100% {
     transform: rotate(0deg); } }
+@keyframes collapse {
+  0% {
+    transform: none; }
+  100% {
+    transform: scale(0.1); } }
 body {
   overflow-x: hidden;
   scroll-snap-type: y mandatory; }
@@ -83,16 +88,20 @@ main .main-content {
         border-radius: 5px; }
       main .main-content .topic .topic-content p {
         width: 65%; }
-    main .main-content .topic .landing h1 {
-      font-size: 6rem;
-      animation-name: jiggle;
-      animation-duration: 3s;
-      animation-timing-function: ease;
-      animation-iteration-count: infinite;
-      animation-direction: normal; }
-    main .main-content .topic .landing .btn {
-      transition: all 0.3s ease-in; }
-      main .main-content .topic .landing .btn:hover {
-        transform: scale(1.2, 1.2); }
+    main .main-content .topic .landing {
+      transition: all 0.5s ease-in; }
+      main .main-content .topic .landing h1 {
+        font-size: 6rem;
+        animation-name: jiggle;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: normal; }
+      main .main-content .topic .landing .btn {
+        transition: all 0.3s ease-in; }
+        main .main-content .topic .landing .btn:hover {
+          transform: scale(1.2, 1.2); }
+    main .main-content .topic .landing-collapsed {
+      transform: scale(0.1); }
 
 /*# sourceMappingURL=index.css.map */
