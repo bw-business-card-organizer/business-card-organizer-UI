@@ -12,7 +12,10 @@ h1 {
 nav {
   box-shadow: 1px 6px 22px -2px rgba(0, 0, 0, 0.4); }
   nav .nav-item a {
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    transition: all 0.3s ease-in; }
+    nav .nav-item a:hover {
+      transform: scale(1.05, 1.05); }
 
 footer {
   background-color: #2477B3;
@@ -36,6 +39,17 @@ footer {
       footer .footer-main .footer-section ul li {
         cursor: pointer; }
 
+@keyframes jiggle {
+  0% {
+    transform: rotate(0deg); }
+  5% {
+    transform: rotate(3deg); }
+  10% {
+    transform: rotate(-3deg); }
+  15% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
 body {
   overflow-x: hidden;
   scroll-snap-type: y mandatory; }
@@ -70,6 +84,15 @@ main .main-content {
       main .main-content .topic .topic-content p {
         width: 65%; }
     main .main-content .topic .landing h1 {
-      font-size: 6rem; }
+      font-size: 6rem;
+      animation-name: jiggle;
+      animation-duration: 3s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      animation-direction: normal; }
+    main .main-content .topic .landing .btn {
+      transition: all 0.3s ease-in; }
+      main .main-content .topic .landing .btn:hover {
+        transform: scale(1.2, 1.2); }
 
 /*# sourceMappingURL=index.css.map */
