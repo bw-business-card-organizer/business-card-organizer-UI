@@ -4,10 +4,4 @@
   font-family: "Nunito", sans-serif;
   color: #3C5D74; }
 
-html,
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column; }
-
 /*# sourceMappingURL=global.css.map */
