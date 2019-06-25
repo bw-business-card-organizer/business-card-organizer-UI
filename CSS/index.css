@@ -22,57 +22,52 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 10px;
     color: #3C5D74;
     font-family: "Nunito", sans-serif; }
-    main .main-content .section-wrapper {
-      margin: -200px -50px;
+    main .main-content .topic {
+      margin: 50px 0;
       transform-origin: left center;
+      padding: 50px;
+      height: 900px;
+      width: 100%;
       display: flex;
-      justify-content: center;
-      padding: 400px 0;
-      width: 120%; }
-      main .main-content .section-wrapper:nth-child(odd) {
-        background: #FFF;
-        transform: rotate(5deg); }
-        main .main-content .section-wrapper:nth-child(odd) .topic {
-          transform: rotate(-5deg); }
-      main .main-content .section-wrapper:nth-child(even) {
-        background: #e5e5e5;
-        transform: rotate(-5deg); }
-        main .main-content .section-wrapper:nth-child(even) .topic {
-          transform: rotate(5deg); }
-      main .main-content .section-wrapper .topic {
-        border-radius: 5px;
-        width: 50%; }
-        main .main-content .section-wrapper .topic img {
-          max-width: 100%; }
-          main .main-content .section-wrapper .topic img:first-child {
+      flex-direction: column;
+      align-items: center; }
+      main .main-content .topic:first-child {
+        margin: 0 0 50px 0; }
+      main .main-content .topic:last-child {
+        margin: 0; }
+      main .main-content .topic:nth-child(odd) {
+        background: #FFF; }
+      main .main-content .topic:nth-child(even) {
+        background: #e5e5e5; }
+      main .main-content .topic .topic-content {
+        width: 62.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        main .main-content .topic .topic-content img {
+          max-width: 80%;
+          max-height: 60%; }
+          main .main-content .topic .topic-content img:first-child {
             border-radius: 5px;
             margin-bottom: 10px; }
-        main .main-content .section-wrapper .topic h1 {
+        main .main-content .topic .topic-content h1 {
           width: 100%;
           padding: 10px;
           border-radius: 10px 10px 0 0;
           font-weight: bold;
           font-size: 18px; }
-        main .main-content .section-wrapper .topic p {
+        main .main-content .topic .topic-content p {
           width: 100%;
           padding: 10px; }
 
 footer {
   background: #2477B3;
-  margin: 100px -50px 0 -50px;
-  z-index: 2;
-  position: relative;
-  height: 300px;
-  transform: rotate(5deg);
-  width: 120%; }
+  margin: 0; }
   footer .footer-content {
     color: #FFF;
-    margin-bottom: 20px;
-    padding: 10px 0;
-    transform: rotate(-5deg); }
+    padding: 10px 0; }
     footer .footer-content li {
       color: #FFF;
       font-family: "Asap", serif; }
