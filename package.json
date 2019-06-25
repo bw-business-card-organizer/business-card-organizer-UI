@@ -1,0 +1,24 @@
+{
+  "name": "business-card-organizer-UI",
+  "version": "1.0.0",
+  "description": "Business Card Organizer's UI.",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.22.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bw-business-card-organizer/business-card-organizer-UI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bw-business-card-organizer/business-card-organizer-UI/issues"
+  },
+  "homepage": "https://github.com/bw-business-card-organizer/business-card-organizer-UI#readme"
+}
