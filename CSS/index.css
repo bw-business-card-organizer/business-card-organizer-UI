@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
-* {
-  font-family: "Nunito", sans-serif;
-  color: red;
-}
-
 html,
 body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: "Nunito", sans-serif;
+}
+
+.nav-item a {
+  font-size: 1.25rem;
 }
 
 main {
