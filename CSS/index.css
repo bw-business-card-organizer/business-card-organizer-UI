@@ -1,19 +1,25 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Asap&display=swap");
-* {
+
+html,
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: "Nunito", sans-serif;
-  color: #3C5D74; }
+  background: #e5e5e5;
+  overflow-x: hidden;
+}
 
 nav {
   background: #2477B3;
   box-shadow: 1px 6px 22px -2px rgba(0, 0, 0, 0.4);
-  color: #FFF; }
-  nav a {
-    color: #FFF; }
+  color: #FFF;
+  a {
+    color: #FFF;
+    font-size: 1.25rem;
+  }
+}
 
-body {
-  background: #e5e5e5;
-  overflow-x: hidden; }
 
 main .main-content {
   display: flex;

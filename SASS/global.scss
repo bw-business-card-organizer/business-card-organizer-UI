@@ -7,7 +7,6 @@ $font-stack: 'Nunito', sans-serif;
 $std-box-shadow: 1px 6px 22px -2px rgba(0,0,0,0.4);
 $bottom-box-shadow: 0 10px 22px -10px rgba(0,0,0,0.4);
 $y-spacing: 1rem;
-$primary-color: red;
 
 // Color theme
 $white: #FFF;
@@ -24,14 +23,17 @@ $lightblue: #2477B3;
 }
 
 // general reset stuff
-* {
-    font-family: $font-stack;
-    color: $darkblue;
-}
 
 html,
 body {
-    //height: 100vh;
-    //display: flex;
-    //flex-direction: column;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-stack;
+}
+
+.nav-item {
+    a {
+        font-size: 1.25rem;
+    }
 }
