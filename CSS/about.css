@@ -5,34 +5,46 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Nunito", sans-serif; }
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+}
 
 nav {
-  box-shadow: 1px 6px 22px -2px rgba(0, 0, 0, 0.4); }
-  nav .nav-item a {
-    font-size: 1.25rem; }
+  box-shadow: 1px 6px 22px -2px rgba(0, 0, 0, 0.4);
+}
+nav .nav-item a {
+  font-size: 1.25rem;
+}
 
 footer {
   background-color: #2477B3;
   color: #fff;
-  scroll-snap-align: center; }
-  footer .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center; }
-  footer .footer-main {
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 1rem; }
-    footer .footer-main .footer-section ul {
-      list-style-type: none;
-      padding: 0; }
-      footer .footer-main .footer-section ul li {
-        cursor: pointer; }
+  scroll-snap-align: center;
+}
+footer .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-main {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1rem;
+}
+footer .footer-main .footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer .footer-main .footer-section ul li {
+  cursor: pointer;
+}
 
 .about-project {
   display: flex;
@@ -40,20 +52,26 @@ footer {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  height: 95vh; }
-  .about-project h1 {
-    margin-bottom: 3rem; }
-  .about-project p {
-    width: 75%; }
+  height: 95vh;
+}
+.about-project h1 {
+  margin-bottom: 3rem;
+}
+.about-project p {
+  width: 75%;
+}
 
 .about-devteam {
   text-align: center;
-  margin-bottom: 30vh; }
-  .about-devteam .dev-cards {
-    margin-top: 3rem;
-    justify-content: space-around; }
-    .about-devteam .dev-cards .card {
-      color: #fff;
-      border: none; }
+  margin-bottom: 30vh;
+}
+.about-devteam .dev-cards {
+  margin-top: 3rem;
+  justify-content: space-around;
+}
+.about-devteam .dev-cards .card {
+  color: #fff;
+  border: none;
+}
 
 /*# sourceMappingURL=about.css.map */
