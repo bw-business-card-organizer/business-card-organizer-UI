@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+  color: red;
+}
 
+html,
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dev-cards .card {
+  color: #fff;
+  border: none;
+}
 
 /*# sourceMappingURL=about.css.map */
