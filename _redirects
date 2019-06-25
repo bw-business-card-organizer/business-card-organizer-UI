@@ -1,2 +1,4 @@
+/     /DOC/index.html   200
 /ASSETS/*     /ASSETS/:splat   200
 /CSS/*     /CSS/:splat   200
+/*     /DOC/:splat   200
