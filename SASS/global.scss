@@ -1,6 +1,5 @@
 // font import
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
 
 // global variables
 $font-stack: 'Nunito', sans-serif;
@@ -14,7 +13,6 @@ $orange: #ff9f2b;
 $gray: #e5e5e5;
 $darkblue: #3C5D74;
 $lightblue: #2477B3;
-
 
 // mixins
 @mixin centered-flex-component() {
@@ -41,6 +39,11 @@ nav {
     .nav-item {
         a {
             font-size: 1.25rem;
+            transition: all 0.3s ease-in;
+
+            &:hover {
+                transform: scale(1.05, 1.05);
+            }
         }
     }
 }
