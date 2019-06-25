@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Asap&display=swap");
 * {
   font-family: "Nunito", sans-serif;
-  color: red; }
+  color: #3C5D74; }
 
 html,
 body {
@@ -20,21 +21,33 @@ body {
   background: #8C8886; }
 
 a {
-  color: #B26C43; }
+  color: #ff9f2b; }
 
 main {
   display: flex;
   justify-content: center;
   height: 100%; }
   main .main-content {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     background: #FFF;
     box-shadow: 1px 6px 22px -2px rgba(0, 0, 0, 0.4);
     height: 95%;
     margin: 1rem;
     padding: 10px;
-    color: #3C5D74; }
+    color: #3C5D74;
+    font-family: "Asap", serif; }
+    main .main-content h1 {
+      color: #FFF;
+      background: #ff9f2b;
+      width: 100%;
+      height: 60px;
+      padding: 10px;
+      border-radius: 10px 10px 0 0; }
+    main .main-content p {
+      width: 100%;
+      background: #FFF;
+      box-shadow: 0 10px 22px -10px rgba(0, 0, 0, 0.4);
+      margin-top: 0; }
 
 footer {
   display: flex;
@@ -47,6 +60,7 @@ footer {
     padding: 10px 0;
     box-shadow: 1px 6px 22px -2px rgba(0, 0, 0, 0.4); }
     footer .footer-content li {
-      color: #3C5D74; }
+      color: #3C5D74;
+      font-family: "Asap", serif; }
 
 /*# sourceMappingURL=index.css.map */

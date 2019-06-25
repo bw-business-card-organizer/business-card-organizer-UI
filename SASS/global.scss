@@ -1,15 +1,17 @@
 // font import
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
 
 // global variables
 $font-stack: 'Nunito', sans-serif;
 $std-box-shadow: 1px 6px 22px -2px rgba(0,0,0,0.4);
+$bottom-box-shadow: 0 10px 22px -10px rgba(0,0,0,0.4);
 $y-spacing: 1rem;
 $primary-color: red;
 
 // Color theme
 $white: #FFF;
-$orange: #B26C43;
+$orange: #ff9f2b;
 $gray: #8C8886;
 $darkblue: #3C5D74;
 $lightblue: #2477B3;
@@ -24,7 +26,7 @@ $lightblue: #2477B3;
 // general reset stuff
 * {
     font-family: $font-stack;
-    color: $primary-color;
+    color: $darkblue;
 }
 
 html,

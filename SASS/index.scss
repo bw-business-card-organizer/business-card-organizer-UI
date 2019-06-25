@@ -2,6 +2,7 @@
 
 
 // page styles
+
 nav {
   background: $lightblue;
   box-shadow: $std-box-shadow;
@@ -24,13 +25,31 @@ main {
     @include centered-flex-component();
     height: 100%;
     .main-content {
-        @include centered-flex-component();
+        //@include centered-flex-component();
+        flex-direction: column;
         background: $white;
         box-shadow: $std-box-shadow;
         height: 95%;
         margin: $y-spacing;
         padding: 10px;
         color: $darkblue;
+        font-family: "Asap", serif;
+
+        h1 {
+          color: $white;
+          background: $orange;
+          width: 100%;
+          height: 60px;
+          padding: 10px;
+          border-radius: 10px 10px 0 0;
+        }
+
+        p {
+          width: 100%;
+          background: $white;
+          box-shadow: $bottom-box-shadow;
+          margin-top: 0;
+        }
     }
 }
 
@@ -46,6 +65,7 @@ footer {
 
       li {
         color: $darkblue;
+        font-family: "Asap", serif;
       }
 
     }

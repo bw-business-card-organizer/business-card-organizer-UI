@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Asap&display=swap");
 * {
   font-family: "Nunito", sans-serif;
-  color: red;
-}
+  color: #3C5D74; }
 
 html,
 body {
   height: 100vh;
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 /*# sourceMappingURL=global.css.map */
