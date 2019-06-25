@@ -1,10 +1,20 @@
 // font import
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
 
 // global variables
 $font-stack: 'Nunito', sans-serif;
 $std-box-shadow: 1px 6px 22px -2px rgba(0,0,0,0.4);
+$bottom-box-shadow: 0 10px 22px -10px rgba(0,0,0,0.4);
 $y-spacing: 1rem;
+
+// Color theme
+$white: #FFF;
+$orange: #ff9f2b;
+$gray: #e5e5e5;
+$darkblue: #3C5D74;
+$lightblue: #2477B3;
+
 
 // mixins
 @mixin centered-flex-component() {

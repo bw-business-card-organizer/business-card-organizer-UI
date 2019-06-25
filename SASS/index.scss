@@ -2,20 +2,108 @@
 
 
 // page styles
+
+nav {
+    background: $lightblue;
+    box-shadow: $std-box-shadow;
+    color: $white;
+
+    a {
+        color: $white;
+    }
+}
+
+body {
+    background: $gray;
+    overflow-x: hidden;
+}
+
 main {
-    @include centered-flex-component();
-    height: 100%;
+    //width: 100%;
+
+
     .main-content {
-        @include centered-flex-component();
-        box-shadow: $std-box-shadow;
-        height: 95%;
-        margin: $y-spacing;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        //padding: 10px;
+        color: $darkblue;
+        font-family: $font-stack;
+
+        .topic {
+            margin: 50px 0;
+            transform-origin: left center;
+            padding: 50px;
+            height: 900px;
+            width: 100%;
+            @include centered-flex-component();
+
+            &:first-child {
+                margin: 0 0 50px 0;
+            }
+
+            &:last-child {
+                margin: 0;
+            }
+
+
+            &:nth-child(odd) {
+                background: $white;
+            }
+
+            &:nth-child(even) {
+                background: $gray;
+            }
+
+            .topic-content {
+                //width: 62.5%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    max-width: 80%;
+                    max-height: 60%;
+
+                    &:first-child {
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                h1 {
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 10px 10px 0 0;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+
+                p {
+                    width: 100%;
+                    padding: 10px;
+                }
+            }
+
+        }
     }
 }
 
 footer {
-    @include centered-flex-component();
+    background: $lightblue;
+    margin: 0;
+
     .footer-content {
+        color: $white;
+        padding: 10px 0;
+
+        li {
+            color: $white;
+            font-family: "Asap", serif;
+
+        }
 
     }
 }
+
