@@ -29,32 +29,3 @@ $header-spacing: 3rem;
         }
     }
 }
-
-footer {
-    background-color: #2477B3;
-    color: #fff;
-    .container {
-        @include centered-flex-component();
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-main {
-        @include centered-flex-component();
-        width: 90%;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: $y-spacing;
-        .footer-section {
-            ul {
-                list-style-type: none;
-                padding: 0;
-                li {
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-}
-
-
-
