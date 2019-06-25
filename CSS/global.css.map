@@ -1,1 +1,7 @@
-{"version":3,"sourceRoot":"","sources":["../SASS/global.scss"],"names":[],"mappings":"AACQ;AAeR;EACI,aAbS;EAcT,OAXY;;;AAchB;AAAA;EAEI;EACA;EACA","file":"global.css"}
+{
+"version": 3,
+"mappings": "AACQ,0EAAkE;AAClE,wEAAgE;AAwBxE,CAAE;EACE,WAAW,EAtBF,oBAAoB;EAuB7B,KAAK,EAbE,OAAO",
+"sources": ["../SASS/global.scss"],
+"names": [],
+"file": "global.css"
+}
