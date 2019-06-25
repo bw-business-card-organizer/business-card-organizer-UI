@@ -32,6 +32,10 @@ body {
     font-family: $font-stack;
 }
 
+h1 {
+    font-weight: bold;
+}
+
 nav {
     box-shadow: $std-box-shadow;
     .nav-item {
