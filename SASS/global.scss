@@ -44,6 +44,7 @@ nav {
 footer {
     background-color: #2477B3;
     color: #fff;
+    scroll-snap-align: center;
     .container {
         @include centered-flex-component();
         flex-direction: column;
