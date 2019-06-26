@@ -71,12 +71,15 @@ footer {
         width: 90%;
         flex-direction: row;
         justify-content: space-around;
-        margin: $y-spacing;
+        margin-top: 1rem;
         @media (max-width: 768px) { 
             flex-direction: column;
             text-align: center;
         }
         .footer-section {
+            h6 {
+                font-size: 1.5rem;
+            }
             ul {
                 list-style-type: none;
                 padding: 0;
@@ -98,5 +101,12 @@ footer {
                 }
             }
         }
+    }
+    p {
+        margin: 0;
+    }
+
+    .credits {
+        font-size: 0.5rem;
     }
 }
