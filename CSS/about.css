@@ -100,18 +100,15 @@ footer .credits {
 }
 .about-devteam .dev-cards {
   margin-top: 3rem;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .about-devteam .dev-cards .card {
   border: none;
+  margin: 0.5rem;
 }
-@media (max-width: 768px) {
-  .about-devteam .dev-cards .card {
-    width: 100%;
-  }
-}
-.about-devteam .dev-cards .card .card-img-top {
-  width: 100%;
+.about-devteam .dev-cards .card img {
+  height: 16rem;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=about.css.map */
