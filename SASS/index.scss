@@ -32,6 +32,18 @@ main {
         color: $darkblue;
         font-family: $font-stack;
 
+        .bgvideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            min-width: 100%;
+            width: 100%;
+            height: auto;
+
+
+        }
+
         .topic {
             transform-origin: left center;
             height: 100vh;
@@ -39,8 +51,18 @@ main {
             @include centered-flex-component();
             align-items: center;
 
-            &:nth-child(even) {
+
+            &:nth-child(odd) {
                 background: $gray;
+            }
+
+            &:nth-child(even) {
+                background: $white;
+            }
+
+            &:nth-child(2) {
+                background: rgba(255, 255, 255, 0.8);
+                //opacity: 0.8;
             }
 
             .topic-content {

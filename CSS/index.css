@@ -65,6 +65,14 @@ main .main-content {
   align-items: center;
   color: #3C5D74;
   font-family: "Nunito", sans-serif; }
+  main .main-content .bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    min-width: 100%;
+    width: 100%;
+    height: auto; }
   main .main-content .topic {
     transform-origin: left center;
     height: 100vh;
@@ -72,8 +80,12 @@ main .main-content {
     display: flex;
     justify-content: center;
     align-items: center; }
-    main .main-content .topic:nth-child(even) {
+    main .main-content .topic:nth-child(odd) {
       background: #e5e5e5; }
+    main .main-content .topic:nth-child(even) {
+      background: #FFF; }
+    main .main-content .topic:nth-child(2) {
+      background: rgba(255, 255, 255, 0.8); }
     main .main-content .topic .topic-content {
       display: flex;
       justify-content: center;
