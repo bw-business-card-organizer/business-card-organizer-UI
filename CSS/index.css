@@ -4,60 +4,76 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Nunito", sans-serif; }
+  font-family: "Nunito", sans-serif;
+}
 
 h1 {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 nav {
-  box-shadow: 1px 6px 22px -2px rgba(0, 0, 0, 0.4); }
-  nav .nav-item a {
-    font-size: 1.25rem;
-    transition: all 0.3s ease-in; }
-    nav .nav-item a:hover {
-      transform: scale(1.05, 1.05); }
+  box-shadow: 1px 6px 22px -2px rgba(0, 0, 0, 0.4);
+}
+nav .nav-item a {
+  font-size: 1.25rem;
+  transition: all 0.3s ease-in;
+}
+nav .nav-item a:hover {
+  transform: scale(1.05, 1.05);
+}
 
 footer {
   background-color: #2477B3;
   color: #fff;
-  scroll-snap-align: center; }
-  footer .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center; }
-  footer .footer-main {
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 1rem; }
-    footer .footer-main .footer-section ul {
-      list-style-type: none;
-      padding: 0; }
-      footer .footer-main .footer-section ul li {
-        cursor: pointer; }
+  scroll-snap-align: center;
+}
+footer .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-main {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1rem;
+}
+footer .footer-main .footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer .footer-main .footer-section ul li {
+  cursor: pointer;
+}
 
 @keyframes jiggle {
   0% {
-    transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
   5% {
-    transform: rotate(3deg); }
+    transform: rotate(3deg);
+  }
   10% {
-    transform: rotate(-3deg); }
+    transform: rotate(-3deg);
+  }
   15% {
-    transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
   100% {
     transform: rotate(0deg); } }
+
 @keyframes collapse {
   0% {
     transform: none; }
   100% {
     transform: scale(0.1); } }
+
 body {
   overflow-x: hidden;
-  scroll-snap-type: y mandatory; }
+  scroll-snap-type: y mandatory;
+}
 
 main .main-content {
   display: flex;
@@ -103,5 +119,6 @@ main .main-content {
           transform: scale(1.2, 1.2); }
     main .main-content .topic .landing-collapsed {
       transform: scale(0.1); }
+
 
 /*# sourceMappingURL=index.css.map */

@@ -1,11 +1,15 @@
+
+
 // font import
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
 
 // global variables
 $font-stack: 'Nunito', sans-serif;
 $std-box-shadow: 1px 6px 22px -2px rgba(0,0,0,0.4);
 $bottom-box-shadow: 0 10px 22px -10px rgba(0,0,0,0.4);
 $y-spacing: 1rem;
+$header-spacing: 3rem;
 
 // Color theme
 $white: #FFF;
@@ -19,6 +23,12 @@ $lightblue: #2477B3;
     display: flex;
     justify-content: center;
 }
+
+@mixin make-wide-on-mobile() {
+    @media (max-width: 768px) { 
+        width: 100%;
+     }
+  }
 
 // general reset stuff
 

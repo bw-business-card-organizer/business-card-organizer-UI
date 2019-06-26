@@ -1,10 +1,8 @@
 @import 'global';
 
-$header-spacing: 3rem;
-
-
 .about-project {
     @include centered-flex-component();
+    color: $darkblue;
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -13,19 +11,20 @@ $header-spacing: 3rem;
         margin-bottom: $header-spacing;
     }
     p {
-        width: 75%;
+        width: 65%;
     }
 }
 
 .about-devteam {
+    color: $darkblue;
     text-align: center;
     margin-bottom: 30vh;
     .dev-cards {
         margin-top: $header-spacing;
         justify-content: space-around;
         .card {
-            color: #fff;
             border: none;
+            @include make-wide-on-mobile();
         }
     }
 }
