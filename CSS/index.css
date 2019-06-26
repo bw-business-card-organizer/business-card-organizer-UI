@@ -67,12 +67,11 @@ main .main-content {
   font-family: "Nunito", sans-serif; }
   main .main-content .bgvideo {
     position: fixed;
-    right: 0;
+    left: 0;
     bottom: 0;
     z-index: -1;
     min-width: 100%;
-    width: 100%;
-    height: auto; }
+    min-height: 100%; }
   main .main-content .topic {
     transform-origin: left center;
     height: 100vh;
