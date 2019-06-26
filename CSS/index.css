@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Asap&display=swap");
 html,
 body {
   height: 100vh;
@@ -17,6 +16,10 @@ nav {
 }
 nav .nav-item a {
   font-size: 1.25rem;
+  transition: all 0.3s ease-in;
+}
+nav .nav-item a:hover {
+  transform: scale(1.05, 1.05);
 }
 
 footer {
