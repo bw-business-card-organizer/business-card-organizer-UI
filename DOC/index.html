@@ -42,7 +42,10 @@
     <main>
         <div class='main-content'>
 
-            <div class="topic">
+            <video class="bgvideo" autoplay muted loop>
+                <source src="../ASSETS/Run_5_wo_metadata_h264420_720p_UHQ.mp4" type="video/mp4">
+            </video>
+            <div class="topic showing" data-slidenum="1">
                 <div class="container topic-content landing">
                     <h1>Stack</h1>
                     <p>The modern solution to business cards.</p>
@@ -50,7 +53,7 @@
                 </div>
             </div>
 
-            <div class="topic slider">
+            <div class="topic" data-slidenum="2">
                 <div class="container topic-content">
                     <img src="../ASSETS/meeting-boardroom-professionals.jpg" alt="Professionals in Meeting" />
                     <h1>TOPIC 1</h1>
@@ -60,7 +63,7 @@
                 </div>
             </div>
 
-            <div class="topic slider">
+            <div class="topic" data-slidenum="3">
                 <div class="container topic-content">
                     <img src="../ASSETS/businessman-writing.jpeg" alt="Businessman Writing" />
                     <h1>TOPIC 2</h1>
@@ -72,7 +75,7 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer data-slidenum="4">
         <div class='container'>
             <div class='footer-main'>
                 <div class='footer-section'>
@@ -109,6 +112,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="../JS/index.js"></script>
 </body>
 
 </html>
