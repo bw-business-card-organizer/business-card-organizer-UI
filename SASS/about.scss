@@ -18,13 +18,16 @@
 .about-devteam {
     color: $darkblue;
     text-align: center;
-    margin-bottom: 30vh;
+    margin-bottom: 20vh;
     .dev-cards {
         margin-top: $header-spacing;
         justify-content: space-around;
         .card {
             border: none;
             @include make-wide-on-mobile();
+            .card-img-top {
+                width: 100%;
+            }
         }
     }
 }

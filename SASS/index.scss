@@ -51,7 +51,6 @@ main {
             @include centered-flex-component();
             align-items: center;
 
-
             &:nth-child(odd) {
                 background: $gray;
             }
@@ -71,9 +70,11 @@ main {
                 align-items: center;
 
                 img {
-                    width: 50%;
-                    height: auto;
-                    border-radius: 5px;
+                    height: 30vh;
+                }
+
+                h1 {
+                    width: 80%;
                 }
 
                 p {

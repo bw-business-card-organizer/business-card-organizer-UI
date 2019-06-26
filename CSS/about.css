@@ -4,23 +4,27 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Nunito", sans-serif; }
+  font-family: "Nunito", sans-serif;
+}
 
 h1 {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 nav {
-  box-shadow: 1px 6px 22px -2px rgba(0, 0, 0, 0.4); }
-  nav .nav-item a {
-    font-size: 1.25rem;
-    transition: all 0.3s ease-in; }
-    nav .nav-item a:hover {
-      transform: scale(1.05, 1.05); }
+  box-shadow: 1px 6px 22px -2px rgba(0, 0, 0, 0.4);
+}
+nav .nav-item a {
+  font-size: 1.25rem;
+  transition: all 0.3s ease-in;
+}
+nav .nav-item a:hover {
+  transform: scale(1.05, 1.05);
+}
 
 footer {
   background-color: #2477B3;
   color: #fff;
-  scroll-snap-align: center;
 }
 footer .container {
   display: flex;
@@ -69,23 +73,34 @@ footer .footer-main .social-icons li img {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  height: 95vh; }
-  .about-project h1 {
-    margin-bottom: 3rem; }
-  .about-project p {
-    width: 65%; }
+  height: 95vh;
+}
+.about-project h1 {
+  margin-bottom: 3rem;
+}
+.about-project p {
+  width: 65%;
+}
 
 .about-devteam {
   color: #3C5D74;
   text-align: center;
-  margin-bottom: 30vh; }
-  .about-devteam .dev-cards {
-    margin-top: 3rem;
-    justify-content: space-around; }
-    .about-devteam .dev-cards .card {
-      border: none; }
-      @media (max-width: 768px) {
-        .about-devteam .dev-cards .card {
-          width: 100%; } }
+  margin-bottom: 20vh;
+}
+.about-devteam .dev-cards {
+  margin-top: 3rem;
+  justify-content: space-around;
+}
+.about-devteam .dev-cards .card {
+  border: none;
+}
+@media (max-width: 768px) {
+  .about-devteam .dev-cards .card {
+    width: 100%;
+  }
+}
+.about-devteam .dev-cards .card .card-img-top {
+  width: 100%;
+}
 
 /*# sourceMappingURL=about.css.map */

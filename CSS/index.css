@@ -4,23 +4,27 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Nunito", sans-serif; }
+  font-family: "Nunito", sans-serif;
+}
 
 h1 {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 nav {
-  box-shadow: 1px 6px 22px -2px rgba(0, 0, 0, 0.4); }
-  nav .nav-item a {
-    font-size: 1.25rem;
-    transition: all 0.3s ease-in; }
-    nav .nav-item a:hover {
-      transform: scale(1.05, 1.05); }
+  box-shadow: 1px 6px 22px -2px rgba(0, 0, 0, 0.4);
+}
+nav .nav-item a {
+  font-size: 1.25rem;
+  transition: all 0.3s ease-in;
+}
+nav .nav-item a:hover {
+  transform: scale(1.05, 1.05);
+}
 
 footer {
   background-color: #2477B3;
   color: #fff;
-  scroll-snap-align: center;
 }
 footer .container {
   display: flex;
@@ -64,22 +68,32 @@ footer .footer-main .social-icons li img {
 
 @keyframes jiggle {
   0% {
-    transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
   5% {
-    transform: rotate(3deg); }
+    transform: rotate(3deg);
+  }
   10% {
-    transform: rotate(-3deg); }
+    transform: rotate(-3deg);
+  }
   15% {
-    transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
   100% {
-    transform: rotate(0deg); } }
+    transform: rotate(0deg);
+  }
+}
 @keyframes collapse {
   0% {
-    transform: none; }
+    transform: none;
+  }
   100% {
-    transform: scale(0.1); } }
+    transform: scale(0.1);
+  }
+}
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 main .main-content {
   display: flex;
@@ -88,52 +102,67 @@ main .main-content {
   flex-direction: column;
   align-items: center;
   color: #3C5D74;
-  font-family: "Nunito", sans-serif; }
-  main .main-content .bgvideo {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    min-width: 100%;
-    min-height: 100%; }
-  main .main-content .topic {
-    transform-origin: left center;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    main .main-content .topic:nth-child(odd) {
-      background: #e5e5e5; }
-    main .main-content .topic:nth-child(even) {
-      background: #FFF; }
-    main .main-content .topic:nth-child(2) {
-      background: rgba(255, 255, 255, 0.8); }
-    main .main-content .topic .topic-content {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center; }
-      main .main-content .topic .topic-content img {
-        width: 50%;
-        height: auto;
-        border-radius: 5px; }
-      main .main-content .topic .topic-content p {
-        width: 65%; }
-    main .main-content .topic .landing {
-      transition: all 0.5s ease-in; }
-      main .main-content .topic .landing h1 {
-        font-size: 6rem;
-        animation-name: jiggle;
-        animation-duration: 3s;
-        animation-timing-function: ease;
-        animation-iteration-count: infinite;
-        animation-direction: normal; }
-      main .main-content .topic .landing .btn {
-        transition: all 0.3s ease-in; }
-        main .main-content .topic .landing .btn:hover {
-          transform: scale(1.2, 1.2); }
-    main .main-content .topic .landing-collapsed {
-      transform: scale(0.1); }
+  font-family: "Nunito", sans-serif;
+}
+main .main-content .bgvideo {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+}
+main .main-content .topic {
+  transform-origin: left center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main-content .topic:nth-child(odd) {
+  background: #e5e5e5;
+}
+main .main-content .topic:nth-child(even) {
+  background: #FFF;
+}
+main .main-content .topic:nth-child(2) {
+  background: rgba(255, 255, 255, 0.8);
+}
+main .main-content .topic .topic-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main .main-content .topic .topic-content img {
+  height: 30vh;
+}
+main .main-content .topic .topic-content h1 {
+  width: 80%;
+}
+main .main-content .topic .topic-content p {
+  width: 65%;
+}
+main .main-content .topic .landing {
+  transition: all 0.5s ease-in;
+}
+main .main-content .topic .landing h1 {
+  font-size: 6rem;
+  animation-name: jiggle;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+main .main-content .topic .landing .btn {
+  transition: all 0.3s ease-in;
+}
+main .main-content .topic .landing .btn:hover {
+  transform: scale(1.2, 1.2);
+}
+main .main-content .topic .landing-collapsed {
+  transform: scale(0.1);
+}
 
 /*# sourceMappingURL=index.css.map */
