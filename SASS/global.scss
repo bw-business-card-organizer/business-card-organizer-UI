@@ -88,6 +88,8 @@ footer {
         .social-icons {
             @include centered-flex-component();
             flex-direction: row;
+            background: $darkblue;
+            border-radius: 5px;
             li {
                 margin: 0.5rem;
                 img {

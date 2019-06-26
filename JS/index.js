@@ -1,19 +1,21 @@
 // Start for main JS!
 
 function collapse() {
-    let landing = document.querySelector('.landing');
-    let login = landing.querySelector('.btn');
-    login.addEventListener('click', () => {
-        login.preventDefault();
+    let login = document.querySelector('.btn');
+    login.addEventListener('click', (event) => {
+        let landing = document.querySelector('.landing');
+        let login = document.querySelector('.btn');
+        event.preventDefault(); // fire this on the event
         landing.classList.toggle('landing-collapsed');
         let goto = login.getAttribute('href');
         setTimeout(function() {
             window.location = goto;
-        }, 1000);
+        }, 500);
+        return false;
     });
 }
 
-//collapse();
+collapse();
 
 function setSlides() {
     window.addEventListener('keydown', (event) => {
