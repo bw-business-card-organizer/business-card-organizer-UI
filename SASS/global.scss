@@ -27,7 +27,7 @@ $lightblue: #2477B3;
 @mixin make-wide-on-mobile() {
     @media (max-width: 768px) { 
         width: 100%;
-     }
+    }
   }
 
 // general reset stuff
@@ -72,12 +72,27 @@ footer {
         flex-direction: row;
         justify-content: space-around;
         margin: $y-spacing;
+        @media (max-width: 768px) { 
+            flex-direction: column;
+            text-align: center;
+        }
         .footer-section {
             ul {
                 list-style-type: none;
                 padding: 0;
                 li {
                     cursor: pointer;
+                }
+            }
+        }
+        .social-icons {
+            @include centered-flex-component();
+            flex-direction: row;
+            li {
+                margin: 0.5rem;
+                img {
+                    height: 2.5rem;
+                    width: 2.5rem;
                 }
             }
         }
