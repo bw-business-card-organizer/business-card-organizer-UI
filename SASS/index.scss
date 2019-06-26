@@ -15,10 +15,11 @@ $header-spacing: 3rem;
     100% { transform: scale(0.1); }
 }
 
+
 // page styles
+
 body {
     overflow-x: hidden;
-    scroll-snap-type: y mandatory;
 }
 
 main {
@@ -37,7 +38,6 @@ main {
             width: 100%;
             @include centered-flex-component();
             align-items: center;
-            scroll-snap-align: center;
 
             &:nth-child(even) {
                 background: $gray;
@@ -50,7 +50,7 @@ main {
 
                 img {
                     width: 50%;
-                    height: 40%;
+                    height: auto;
                     border-radius: 5px;
                 }
 
