@@ -2,14 +2,14 @@
 
 function collapse() {
     let login = document.querySelector('.btn');
-    if(!login) return;
+    if (!login) return;
     login.addEventListener('click', (event) => {
         let landing = document.querySelector('.landing');
         let login = document.querySelector('.btn');
         event.preventDefault(); // fire this on the event
         landing.classList.toggle('landing-collapsed');
         let goto = login.getAttribute('href');
-        setTimeout(function() {
+        setTimeout(function () {
             window.location = goto;
         }, 500);
         return false;
@@ -21,23 +21,29 @@ collapse();
 function setSlides() {
     window.addEventListener('keydown', (event) => {
         let slides = document.querySelectorAll('[data-slidenum]');
-        if(slides.length < 1) return; //we don't wont to do this with no slides
+        if (slides.length < 1) return; //we don't wont to do this with no slides
         let current = document.querySelector('.showing');
-        if(event.keyCode == '38') { // up arrow key
+        if (event.keyCode == '38') { // up arrow key
             event.preventDefault();
             let prevNum = +current.dataset.slidenum - 1;
-            if(prevNum < 1) return;
+            if (prevNum < 1) return;
             let prev = slides[prevNum - 1];
-            prev.scrollIntoView({'behavior': 'smooth', 'block': 'center'});
+
+            // fix for the card div
+            let prevIsCardDiv = prev.classList.contains('about-devteam');
+            prevIsCardDiv ? prev.scrollIntoView({ 'behavior': 'smooth', 'block': 'start' }) : prev.scrollIntoView({ 'behavior': 'smooth', 'block': 'center' });
             current.classList.toggle('showing');
             prev.classList.toggle('showing');
         }
-        else if(event.keyCode == '40') { // down arrow key
+        else if (event.keyCode == '40') { // down arrow key
             event.preventDefault();
             let nextNum = +current.dataset.slidenum + 1;
-            if(nextNum > slides.length) return;
+            if (nextNum > slides.length) return;
             let next = slides[nextNum - 1];
-            next.scrollIntoView({'behavior': 'smooth', 'block': 'center'});
+
+            // fix for the card div
+            let nextIsCardDiv = next.classList.contains('about-devteam');
+            nextIsCardDiv ? next.scrollIntoView({ 'behavior': 'smooth', 'block': 'start' }) : next.scrollIntoView({ 'behavior': 'smooth', 'block': 'center' });
             current.classList.toggle('showing');
             next.classList.toggle('showing');
         }
