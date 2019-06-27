@@ -117,10 +117,9 @@ main .main-content {
       background-repeat: no-repeat;
       background-size: cover; }
     main .main-content .topic:nth-child(5) {
-      background-image: url("../ASSETS/backgrounds/skyline.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; }
+      background-image: url("../ASSETS/backgrounds/skyline.png");
+      background-position: center bottom;
+      background-repeat: no-repeat; }
     main .main-content .topic .topic-content {
       display: flex;
       justify-content: center;
