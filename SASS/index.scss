@@ -75,11 +75,10 @@ main {
             }
 
             &:nth-child(5) {
-                background-image: url('../ASSETS/backgrounds/skyline.jpg');
-                background-position: center;
+                background-image: url('../ASSETS/backgrounds/skyline.png');
+                background-position: center bottom;
                 background-repeat: no-repeat;
-                background-size: cover;
-
+                //background-size: cover;
             }
 
             .topic-content {
