@@ -60,6 +60,25 @@ main {
                 background: rgba(255, 255, 255, 0.8);
             }
 
+            &:nth-child(3) {
+                background-image: url('../ASSETS/backgrounds/network.png');
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            &:nth-child(4) {
+                background-image: url('../ASSETS/backgrounds/whitecloud.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+
+            }
+
+            &:nth-child(5) {
+                background-image: url('../ASSETS/backgrounds/skyline.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
             .topic-content {
                 @include centered-flex-component();
                 flex-direction: column;
