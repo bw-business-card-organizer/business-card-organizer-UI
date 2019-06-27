@@ -46,6 +46,9 @@ h1 {
 
 nav {
     box-shadow: $std-box-shadow;
+    .nav-logo {
+        height: 48px;
+    }
     .nav-item {
         a {
             font-size: 1.25rem;
