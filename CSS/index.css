@@ -106,6 +106,21 @@ main .main-content {
       background: #FFF; }
     main .main-content .topic:nth-child(2) {
       background: rgba(255, 255, 255, 0.8); }
+    main .main-content .topic:nth-child(3) {
+      background-image: url("../ASSETS/backgrounds/network.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    main .main-content .topic:nth-child(4) {
+      background-image: url("../ASSETS/backgrounds/whitecloud.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    main .main-content .topic:nth-child(5) {
+      background-image: url("../ASSETS/backgrounds/skyline.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
     main .main-content .topic .topic-content {
       display: flex;
       justify-content: center;
