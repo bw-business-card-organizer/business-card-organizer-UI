@@ -4,107 +4,79 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Nunito", sans-serif;
-}
+  font-family: "Nunito", sans-serif; }
 
 h1 {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 nav {
-  box-shadow: 1px 6px 22px -2px rgba(0, 0, 0, 0.4);
-}
-nav .nav-item a {
-  font-size: 1.25rem;
-  transition: all 0.3s ease-in;
-}
-nav .nav-item a:hover {
-  transform: scale(1.05, 1.05);
-}
+  box-shadow: 1px 6px 22px -2px rgba(0, 0, 0, 0.4); }
+  nav .nav-item a {
+    font-size: 1.25rem;
+    transition: all 0.3s ease-in; }
+    nav .nav-item a:hover {
+      transform: scale(1.05, 1.05); }
 
 footer {
   background-color: #2477B3;
-  color: #fff;
-}
-footer .container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-footer .footer-main {
-  display: flex;
-  justify-content: center;
-  width: 90%;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 1rem;
-}
-@media (max-width: 768px) {
-  footer .footer-main {
+  color: #fff; }
+  footer .container {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    text-align: center;
-  }
-}
-footer .footer-main .footer-section h6 {
-  font-size: 1.5rem;
-}
-footer .footer-main .footer-section ul {
-  list-style-type: none;
-  padding: 0;
-}
-footer .footer-main .footer-section ul li {
-  cursor: pointer;
-}
-footer .footer-main .social-icons {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  background: #3C5D74;
-  border-radius: 5px;
-}
-footer .footer-main .social-icons li {
-  margin: 0.5rem;
-}
-footer .footer-main .social-icons li img {
-  height: 2.5rem;
-  width: 2.5rem;
-}
-footer p {
-  margin: 0;
-}
-footer .credits {
-  font-size: 0.5rem;
-}
+    align-items: center; }
+  footer .footer-main {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem; }
+    @media (max-width: 768px) {
+      footer .footer-main {
+        flex-direction: column;
+        text-align: center; } }
+    footer .footer-main .footer-section h6 {
+      font-size: 1.5rem; }
+    footer .footer-main .footer-section ul {
+      list-style-type: none;
+      padding: 0; }
+      footer .footer-main .footer-section ul li {
+        cursor: pointer; }
+    footer .footer-main .social-icons {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      background: #3C5D74;
+      border-radius: 5px; }
+      footer .footer-main .social-icons li {
+        margin: 0.5rem; }
+        footer .footer-main .social-icons li img {
+          height: 2.5rem;
+          width: 2.5rem; }
+  footer p {
+    margin: 0; }
+  footer .credits {
+    font-size: 0.5rem; }
 
 @keyframes jiggle {
   0% {
-    transform: rotate(0deg);
-  }
+    transform: rotate(0deg); }
   5% {
-    transform: rotate(3deg);
-  }
+    transform: rotate(3deg); }
   10% {
-    transform: rotate(-3deg);
-  }
+    transform: rotate(-3deg); }
   15% {
-    transform: rotate(0deg);
-  }
+    transform: rotate(0deg); }
   100% {
-    transform: rotate(0deg);
-  }
-}
+    transform: rotate(0deg); } }
 @keyframes collapse {
   0% {
-    transform: none;
-  }
+    transform: none; }
   100% {
-    transform: scale(0.1);
-  }
-}
+    transform: scale(0.1); } }
 body {
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
 
 main .main-content {
   display: flex;
@@ -113,67 +85,52 @@ main .main-content {
   flex-direction: column;
   align-items: center;
   color: #3C5D74;
-  font-family: "Nunito", sans-serif;
-}
-main .main-content .bgvideo {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  min-width: 100%;
-  min-height: 100%;
-}
-main .main-content .topic {
-  transform-origin: left center;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main .main-content .topic:nth-child(odd) {
-  background: #e5e5e5;
-}
-main .main-content .topic:nth-child(even) {
-  background: #FFF;
-}
-main .main-content .topic:nth-child(2) {
-  background: rgba(255, 255, 255, 0.8);
-}
-main .main-content .topic .topic-content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-main .main-content .topic .topic-content img {
-  height: 30vh;
-}
-main .main-content .topic .topic-content h1 {
-  width: 80%;
-}
-main .main-content .topic .topic-content p {
-  width: 65%;
-}
-main .main-content .topic .landing {
-  transition: all 0.5s ease-in;
-}
-main .main-content .topic .landing h1 {
-  font-size: 6rem;
-  animation-name: jiggle;
-  animation-duration: 3s;
-  animation-timing-function: ease;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-}
-main .main-content .topic .landing .btn {
-  transition: all 0.3s ease-in;
-}
-main .main-content .topic .landing .btn:hover {
-  transform: scale(1.2, 1.2);
-}
-main .main-content .topic .landing-collapsed {
-  transform: scale(0.1);
-}
+  font-family: "Nunito", sans-serif; }
+  main .main-content .bgvideo {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%; }
+  main .main-content .topic {
+    transform-origin: left center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .main-content .topic:nth-child(odd) {
+      background: #e5e5e5; }
+    main .main-content .topic:nth-child(even) {
+      background: #FFF; }
+    main .main-content .topic:nth-child(2) {
+      background: rgba(255, 255, 255, 0.8); }
+    main .main-content .topic .topic-content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center; }
+      main .main-content .topic .topic-content img {
+        height: 30vh; }
+      main .main-content .topic .topic-content h1 img {
+        max-width: 80%; }
+      main .main-content .topic .topic-content p {
+        width: 65%; }
+    main .main-content .topic .landing {
+      transition: all 0.5s ease-in; }
+      main .main-content .topic .landing h1 {
+        font-size: 6rem;
+        animation-name: jiggle;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: normal; }
+      main .main-content .topic .landing .btn {
+        transition: all 0.3s ease-in; }
+        main .main-content .topic .landing .btn:hover {
+          transform: scale(1.2, 1.2); }
+    main .main-content .topic .landing-collapsed {
+      transform: scale(0.1); }
 
 /*# sourceMappingURL=index.css.map */

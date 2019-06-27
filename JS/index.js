@@ -2,6 +2,7 @@
 
 function collapse() {
     let login = document.querySelector('.btn');
+    if(!login) return;
     login.addEventListener('click', (event) => {
         let landing = document.querySelector('.landing');
         let login = document.querySelector('.btn');
