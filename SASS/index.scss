@@ -38,10 +38,7 @@ main {
             bottom: 0;
             z-index: -1;
             min-width: 100%;
-            //width: 100%;
             min-height: 100%;
-            //height: auto;
-
         }
 
         .topic {
@@ -61,7 +58,6 @@ main {
 
             &:nth-child(2) {
                 background: rgba(255, 255, 255, 0.8);
-                //opacity: 0.8;
             }
 
             .topic-content {
@@ -74,7 +70,10 @@ main {
                 }
 
                 h1 {
-                    width: 80%;
+
+                    img { // the logo
+                        max-width: 80%;
+                    }
                 }
 
                 p {
